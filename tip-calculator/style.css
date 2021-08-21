@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap");
+
+:root {
+  --result-bg: hsl(183, 100%, 15%);
+  --text-inactive: hsl(186, 14%, 43%);
+  --Dark-grayish-cyann: hsl(184, 14%, 56%);
+  --bg-body: hsl(185, 41%, 84%);
+  --input-color: hsl(189, 41%, 97%);
+  --btn-color: hsl(172, 67%, 45%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Mono", sans-serif;
+  background-color: var(--bg-body);
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cube {
+  width: 200px;
+  height: 100px;
+}
+
+.one {
+  background-color: var(--result-bg);
+  color: var(--btn-color);
+}
+
+.two {
+  background-color: var(--text-inactive);
+}
+
+.three {
+  background-color: var(--Dark-grayish-cyann);
+}
+
+.four {
+  background-color: var(--bg-body);
+}
+
+.five {
+  background-color: var(--input-color);
+  color: var(--text-inactive);
+}
+
+.six {
+  background-color: var(--btn-color);
+  color: var(--result-bg);
+}
