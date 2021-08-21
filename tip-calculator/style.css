@@ -7,7 +7,8 @@
   --bg-body: hsl(185, 41%, 84%);
   --input-color: hsl(189, 41%, 97%);
   --btn-color: hsl(172, 67%, 45%);
-  --White: hsl(0, 0%, 100%);
+  --white: hsl(0, 0%, 100%);
+  --btn-inactive: hsl(183, 78%, 23%);
 }
 
 * {
@@ -19,42 +20,226 @@
 body {
   font-family: "Space Mono", sans-serif;
   background-color: var(--bg-body);
-  font-size: 16px;
 }
 
 .container {
+  max-width: 700px;
+  width: 100%;
+  margin: 60px auto;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container img {
+  margin: 50px auto;
+}
+
+.calculator {
+  background-color: var(--white);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.entries {
+  width: 50%;
+}
+
+.bill,
+.tip,
+.people {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+label {
+  color: var(--text-inactive);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.bill-input,
+.people-input {
+  background-color: var(--input-color);
+  color: var(--result-bg);
+  width: 90%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  height: 40px;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  text-indent: 100%;
+}
+
+.bill-input {
+  background-image: url("images/icon-dollar.svg");
+}
+
+.people-input {
+  background-image: url("images/icon-person.svg");
+}
+
+.bill-input:hover,
+.people-input:hover {
+  border: 3px solid var(--btn-color);
+  color: var(--result-bg);
+}
+
+.tip-fields {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.cube {
-  width: 200px;
-  height: 100px;
+.btn {
+  outline: none;
+  border: none;
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  width: 30%;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
 }
 
-.one {
+.tip-percent {
   background-color: var(--result-bg);
-  color: var(--btn-color);
+  color: var(--white);
 }
 
-.two {
-  background-color: var(--text-inactive);
+.tip-percent:hover {
+  background-color: var(--btn-color);
+  color: var(--result-bg);
 }
 
-.three {
-  background-color: var(--Dark-grayish-cyann);
-}
-
-.four {
-  background-color: var(--bg-body);
-}
-
-.five {
+.tip-custom {
   background-color: var(--input-color);
   color: var(--text-inactive);
 }
 
-.six {
-  background-color: var(--btn-color);
+.tip-custom:hover {
+  border: 3px solid var(--btn-color);
   color: var(--result-bg);
+}
+
+.results {
+  background-color: var(--result-bg);
+  color: var(--white);
+  width: 50%;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.btn-reset {
+  outline: none;
+  border: none;
+  text-align: center;
+  padding: 8px 0;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--btn-inactive);
+  color: var(--result-bg);
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-top: 25%;
+}
+
+.btn-reset:hover {
+  background-color: var(--btn-color);
+}
+
+.tip-amount,
+.total-people {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tip-amount-text,
+.total-people-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.head {
+  color: var(--white);
+  font-weight: 700;
+}
+
+.sub-head {
+  color: var(--text-inactive);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.result-text {
+  color: var(--btn-color);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 10px auto;
+  }
+
+  .container img {
+    margin: 50px auto;
+  }
+
+  .calculator {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .entries {
+    width: 100%;
+  }
+
+  .bill,
+  .tip,
+  .people {
+    margin-bottom: 40px;
+  }
+
+  .bill-input,
+  .people-input {
+    width: 100%;
+    height: 40px;
+  }
+
+  .tip-fields {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 48%;
+  }
+
+  .results {
+    width: 100%;
+    border-radius: 10px;
+    padding: 40px 20px;
+  }
+
+  .btn-reset {
+    padding: 10px 0;
+    margin-top: 8%;
+  }
 }

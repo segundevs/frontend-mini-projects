@@ -16,46 +16,42 @@
       <div class="entries">
         <div class="bill">
           <label for="bill">Bill</label>
-          <input type="text" class="bill-input">
+          <input type="number" class="bill-input">
         </div>
         <div class="tip">
-          <div class="label">Select Tip %</div>
+          <label for="tip">Select Tip %</label>
           <div class="tip-fields">
-            <div class="tip-percent">5%</div>
-            <div class="tip-percent">10%</div>
-            <div class="tip-percent">15%</div>
-            <div class="tip-percent">25%</div>
-            <div class="tip-percent">50%</div>
-            <div class="tip-percent">Custom</div>
+            <button class="btn tip-percent">5%</button>
+            <button class="btn tip-percent">10%</button>
+            <button class="btn tip-percent">15%</button>
+            <button class="btn tip-percent">25%</button>
+            <button class="btn tip-percent">50%</button>
+            <input type="number" class="btn tip-custom" placeholder="Custom"/>
           </div>
         </div>
-        <div class="peple">
-          <label for="bill">Number of People</label>
-          <input type="text" class="people-input">
+        <div class="people">
+          <label for="people">Number of People</label>
+          <input type="number" class="people-input">
         </div>
       </div>
 
       <!-- results display go here -->
       <div class="results">
-        <!-- Tip Amount
-        / person
-        
-         -->
-
         <div class="tip-amount">
           <div class="tip-amount-text">
-            Tip Amount
-            / person
+            <span class="head">Tip Amount</span>
+            <span class="sub-head">/ person</span>
           </div>
-          <div class="result-text"></div>
+          <div class="result-text">$0.00</div>
         </div>
         <div class="total-people">
           <div class="total-people-text">
-            Total
-            / person
+            <span class="head">Total</span>
+            <span class="sub-head">/ person</span>
           </div>
-          <div class="result-text"></div>
+          <div class="result-text">$0.00</div>
         </div>
+        <button class="btn-reset">Reset</button>
       </div>
     </section>
   </main>
@@ -63,65 +59,3 @@
   <script src="app.js"></script>
 </body>
 </html>
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-<img src="./images/favicon-32x32.png" alt="">
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-
-  <div class="container">
-    <div class="cube one">
-      <h3>Result</h3>
-    </div>
-    <div class="cube two"></div>
-    <div class="cube three"></div>
-    <div class="cube four"></div>
-    <div class="cube five">
-      <h3>Custom</h3>
-    </div>
-    <div class="cube six">
-      <h3>Enter</h3>
-    </div>
-  </div>
-</body>
-</html> -->
