@@ -11,7 +11,7 @@
   <main class="container">
     <img src="./images/logo.svg" alt="logo">
     
-    <section class="calculator">
+    <form class="calculator">
       <!-- input fields go here -->
       <div class="entries">
         <div class="bill">
@@ -21,11 +21,11 @@
         <div class="tip">
           <label for="tip">Select Tip %</label>
           <div class="tip-fields">
-            <button class="btn tip-percent">5%</button>
-            <button class="btn tip-percent">10%</button>
-            <button class="btn tip-percent">15%</button>
-            <button class="btn tip-percent">25%</button>
-            <button class="btn tip-percent">50%</button>
+            <button class="btn tip-percent five" value=5>5%</button>
+            <button class="btn tip-percent ten" value=10>10%</button>
+            <button class="btn tip-percent fifteen" value=15>15%</button>
+            <button class="btn tip-percent twenty-five" value=25>25%</button>
+            <button class="btn tip-percent fifty" value=50>50%</button>
             <input type="number" class="btn tip-custom" placeholder="Custom"/>
           </div>
         </div>
@@ -42,18 +42,18 @@
             <span class="head">Tip Amount</span>
             <span class="sub-head">/ person</span>
           </div>
-          <div class="result-text">$0.00</div>
+          <div id="person-bill" class="result-text">$0.00</div>
         </div>
         <div class="total-people">
           <div class="total-people-text">
             <span class="head">Total</span>
             <span class="sub-head">/ person</span>
           </div>
-          <div class="result-text">$0.00</div>
+          <div id="total-bill" class="result-text">$0.00</div>
         </div>
         <button class="btn-reset">Reset</button>
       </div>
-    </section>
+    </form>
   </main>
 
   <script src="app.js"></script>
