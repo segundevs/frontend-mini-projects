@@ -1,3 +1,3 @@
-# Frontend Mentor - Tip calculator app
+# Tip Calculator app
 
-![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)
+A calculator app that calculates tips based on the bill incured, percentage of tip and number of people
