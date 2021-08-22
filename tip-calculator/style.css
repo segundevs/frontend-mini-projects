@@ -25,7 +25,7 @@ body {
 .container {
   max-width: 700px;
   width: 100%;
-  margin: 60px auto;
+  margin: 30px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +33,7 @@ body {
 }
 
 .container img {
-  margin: 50px auto;
+  margin: 30px auto;
 }
 
 .calculator {
@@ -54,13 +54,13 @@ body {
 .people {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 label {
   color: var(--text-inactive);
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .bill-input,
@@ -72,10 +72,10 @@ label {
   font-weight: 700;
   outline: none;
   border: none;
-  height: 40px;
+  height: 30px;
   background-position-y: center;
   background-repeat: no-repeat;
-  text-indent: 80%;
+  text-indent: 90%;
 }
 
 .bill-input {
@@ -88,7 +88,7 @@ label {
 
 .bill-input:hover,
 .people-input:hover {
-  border: 3px solid var(--btn-color);
+  outline: 2px solid var(--btn-color);
   color: var(--result-bg);
 }
 
@@ -103,7 +103,7 @@ label {
   outline: none;
   border: none;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   padding: 5px 10px;
   width: 30%;
   font-size: 1rem;
@@ -127,7 +127,7 @@ label {
 }
 
 .tip-custom:hover {
-  border: 3px solid var(--btn-color);
+  outline: 2px solid var(--btn-color);
   color: var(--result-bg);
 }
 
@@ -136,7 +136,7 @@ label {
   color: var(--white);
   width: 50%;
   border-radius: 5px;
-  padding: 20px;
+  padding: 15px;
 }
 
 .btn-reset {
@@ -152,7 +152,7 @@ label {
   color: var(--result-bg);
   text-transform: uppercase;
   border-radius: 5px;
-  margin-top: 25%;
+  margin-top: 15%;
 }
 
 .btn-reset:hover {
@@ -169,7 +169,7 @@ label {
 .total-people-text {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .head {
@@ -179,7 +179,7 @@ label {
 
 .sub-head {
   color: var(--text-inactive);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 700;
 }
 
@@ -195,7 +195,7 @@ label {
   }
 
   .container img {
-    margin: 50px auto;
+    margin: 40px auto;
   }
 
   .calculator {
@@ -210,13 +210,12 @@ label {
   .bill,
   .tip,
   .people {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .bill-input,
   .people-input {
     width: 100%;
-    height: 40px;
   }
 
   .tip-fields {
@@ -227,7 +226,7 @@ label {
 
   .btn {
     margin-bottom: 10px;
-    padding: 10px 15px;
+    padding: 8px 12px;
     border-radius: 5px;
     width: 48%;
   }
@@ -235,11 +234,11 @@ label {
   .results {
     width: 100%;
     border-radius: 10px;
-    padding: 40px 20px;
+    padding: 20px;
   }
 
   .btn-reset {
-    padding: 10px 0;
+    padding: 8px 0;
     margin-top: 8%;
   }
 }
