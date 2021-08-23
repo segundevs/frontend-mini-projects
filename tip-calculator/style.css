@@ -54,12 +54,13 @@ body {
 .people {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
 }
 
 label {
   color: var(--text-inactive);
   font-weight: 700;
+  font-size: 0.9rem;
   margin-bottom: 5px;
 }
 
@@ -106,7 +107,7 @@ label {
   margin-bottom: 8px;
   padding: 5px 10px;
   width: 30%;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   cursor: pointer;
 }
@@ -152,7 +153,7 @@ label {
   color: var(--result-bg);
   text-transform: uppercase;
   border-radius: 5px;
-  margin-top: 15%;
+  margin-top: 23%;
 }
 
 .btn-reset:hover {
@@ -175,11 +176,12 @@ label {
 .head {
   color: var(--white);
   font-weight: 700;
+  font-size: 0.9rem;
 }
 
 .sub-head {
   color: var(--text-inactive);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 700;
 }
 
@@ -187,6 +189,14 @@ label {
   color: var(--btn-color);
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+.error-msg {
+  display: none;
+  color: red;
+  font-size: 0.6rem;
+  font-weight: 700;
+  margin-left: 20%;
 }
 
 @media only screen and (max-width: 768px) {

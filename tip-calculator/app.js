@@ -3,6 +3,7 @@ const bill = document.querySelector('.bill-input')
 const people = document.querySelector('.people-input')
 const custom = document.querySelector('.tip-custom')
 const btnReset = document.querySelector('.btn-reset')
+const errorMsg = document.querySelector('.error-msg')
 
 const buttons = document.querySelectorAll('.tip-percent')
 
@@ -17,10 +18,22 @@ const calc = () => {
   buttons.forEach(btn => {
     btn.addEventListener('click', (e)=>{
       e.preventDefault()
-      const res = (e.target.value / 100) * bill.value
-      const tip = res * people.value
-      totalBill.textContent = `$${tip.toFixed(2)}`
-      personBill.textContent = `$${res.toFixed(2)}`
+      if(people.value !== '0'){
+        const res = (e.target.value / 100) * bill.value
+        const tip = res * people.value
+        totalBill.textContent = `$${tip.toFixed(2)}`
+        personBill.textContent = `$${res.toFixed(2)}`
+      }else {
+        people.style.outline = '2px solid red'
+        errorMsg.style.display = 'inline-block'
+        setTimeout(()=>{
+          people.style.outline = ''
+          people.value = ''
+          errorMsg.style.display = 'none'
+        }, 2000)
+        
+      }
+      
     })
   })
 }
