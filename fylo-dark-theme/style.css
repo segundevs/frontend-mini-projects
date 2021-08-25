@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --intro-bg: hsl(217, 28%, 15%); /*(intro and email sign up background)*/
+  --main-bg: hsl(218, 28%, 13%); /* (main background) */
+  --footer-bg: hsl(216, 53%, 9%); /* (footer background) */
+  --testi-bg: hsl(219, 30%, 18%); /* (testimonials background) */
+  --cta-primary: hsl(176, 68%, 64%); /* (inside call-to-action gradient) */
+  --cta-secondary: hsl(198, 60%, 50%); /* (inside call-to-action gradient) */
+  --error-color: hsl(0, 100%, 63%); /* (error) */
+  --white: hsl(0, 0%, 100%); /* (white) */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--intro-bg);
+  color: var(--white);
+  font-family: "Open Sans", sans-serif;
+}
+
+/* .header {
+  background-color: hsl(176, 68%, 64%);
+} */
+
+.navbar {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.875rem;
+}
+
+.brand-logo {
+  width: 120px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.brand-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+
+  /* justify-content: space-around;
+  align-items: center; */
+}
+
+.link-item {
+  list-style: none;
+  margin: 5px 10px;
+}
+
+.link {
+  color: var(--white);
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+/* .services {
+  background-image: url("images/bg-curvy-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.footer {
+  background-color: var(--footer-bg);
+} */
