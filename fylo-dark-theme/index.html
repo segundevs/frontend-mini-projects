@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
   <title>Fylo Landing Page</title>
 </head>
 <body>
   <header class="header">
     <nav class="navbar">
-      <div class="brand-logo">
+      <a href="#" class="brand-logo">
         <img src="images/logo.svg" alt="">
-      </div>
+      </a>
       <ul class="links">
         <li class="link-item">
           <a href="#features" class="link">Features</a>
@@ -180,7 +181,9 @@
   <footer class="footer">
     <div class="footer-container">
     <div class="part-one">
-      <img src="images/logo.svg" alt="">
+      <div class="footer-img-container">
+        <img src="images/logo.svg" alt="">
+      </div>
       <div class="part-one-content">
         <img src="images/icon-location.svg" alt="">
         <p class="part-one-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -209,9 +212,17 @@
       <p>Privacy</p>
     </div>
     <div class="part-five">
-      <img src="images/icon-email.svg" alt="">
-      <img src="images/icon-email.svg" alt="">
-      <img src="images/icon-email.svg" alt="">
+      <a class="social-link" href="#">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+      </a>
+
+      <a class="social-link" href="#">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a class="social-link" href="#">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+        
     </div>
     </div>
   </footer>

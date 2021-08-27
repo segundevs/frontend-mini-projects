@@ -32,7 +32,7 @@ body {
 }
 
 .navbar {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -49,7 +49,7 @@ body {
 
 .brand-logo,
 .links {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .brand-logo img {
@@ -73,6 +73,11 @@ body {
   padding: 5px 10px;
 }
 
+.link:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -89,8 +94,8 @@ body {
 }
 
 .hero-img {
-  width: 50%;
-  height: 450px;
+  width: 40%;
+  height: 400px;
   object-fit: cover;
   margin: 60px auto;
 }
@@ -350,21 +355,104 @@ body {
   width: 90%;
   margin: 0 auto;
   display: flex;
+  align-items: center;
   padding-top: 150px;
   padding-bottom: 20px;
 }
 
-.footer-container > div {
-  width: 20%;
+.part-one,
+.part-two,
+.part-three,
+.part-four {
+  margin-right: 20px;
 }
 
 .part-one {
   display: flex;
   flex-direction: column;
+  width: 30%;
 }
 
 .part-one-content {
   display: flex;
   align-items: center;
+  margin-top: 20px;
+}
+
+.part-one-content img {
+  margin-right: 30px;
+}
+
+.footer-img-container {
+  width: 120px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.footer-img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.part-two {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 20%;
+}
+
+.phone,
+.mail {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.phone img,
+.mail img {
+  margin-right: 20px;
+}
+
+.part-three,
+.part-four {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 15%;
+}
+
+.part-three {
+  margin-top: 60px;
+}
+
+.part-four {
+  margin-top: 20px;
+}
+
+.part-three > *,
+.part-four > * {
+  margin-top: 10px;
+}
+
+.part-five {
+  width: 10%;
+  display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  margin-top: -30px;
+}
+
+.fa {
+  color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.fa-twitter,
+.fa-instagram {
+  padding: 5px;
+}
+
+.fa-facebook {
+  padding: 5px 8px;
 }
