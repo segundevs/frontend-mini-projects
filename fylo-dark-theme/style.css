@@ -233,7 +233,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--cta-primary);
+  color: var(--cta-secondary);
+  margin-bottom: 5px;
 }
 
 .work-link img {
@@ -241,7 +242,7 @@ body {
 }
 
 .underline {
-  background-color: var(--cta-primary);
+  background-color: var(--cta-secondary);
   height: 2px;
   width: 100%;
 }
