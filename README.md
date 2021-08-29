@@ -7,3 +7,5 @@ A repo of frontend projects focused on building with plain HTML, CSS and Javascr
 1. Tip-calculator
 
 Live-url = https://calculate-tip.netlify.app/
+
+Live-url = https://dark-theme-page.netlify.app/
