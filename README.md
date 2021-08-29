@@ -8,4 +8,6 @@ A repo of frontend projects focused on building with plain HTML, CSS and Javascr
 
 Live-url = https://calculate-tip.netlify.app/
 
+2. Dark-theme-landing-page
+
 Live-url = https://dark-theme-page.netlify.app/
