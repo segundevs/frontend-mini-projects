@@ -65,10 +65,12 @@ body {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   width: 40px;
+  cursor: pointer;
 }
 
 .details-container {
   position: absolute;
+  z-index: 999;
   top: 25vh;
   left: 15vw;
   width: 70%;
@@ -86,7 +88,7 @@ body {
 .timezone,
 .isp {
   display: flex;
-  margin: 15px auto;
+  margin: 20px auto;
   padding-left: 10px;
   width: 25%;
   flex-direction: column;
@@ -96,4 +98,21 @@ body {
 .timezone,
 .isp {
   border-left: 1px solid var(--dark-gray);
+}
+
+h5 {
+  color: var(--dark-gray);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+}
+
+h4 {
+  font-size: 1rem;
+  color: var(--very-dark-gray);
+}
+
+.map-container {
+  height: 70vh;
 }
