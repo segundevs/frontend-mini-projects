@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
   <title>IP Address Tracker</title>
 </head>
+
 <body>
 
   <div class="container">
@@ -26,26 +34,31 @@
     <div class="details-container">
       <div class="ip-address">
         <h5 class="ip-address__title">IP address</h5>
-        <h4 class="ip-address__response">57577766</h4>
+        <h4 class="ip-address__response"></h4>
       </div>
-      
+
       <div class="location">
         <h5 class="location__title">location</h5>
-        <h4 class="location__response">Brooklyn, NY 10001</h4>
+        <h4 class="location__response"></h4>
       </div>
-      
+
       <div class="timezone">
         <h5 class="timezone__title">timezone</h5>
-        <h4 class="timezone__response">utc-05:00</h4>
+        <h4 class="timezone__response">UTC </h4>
       </div>
-  
+
       <div class="isp">
         <h5 class="isp__title">isp</h5>
-        <h4 class="isp__response">space x</h4>
+        <h4 class="isp__response"></h4>
       </div>
     </div>
-    <div class="map-container"></div>
+    <div class="map-container" id="mapid"></div>
   </div>
-  
+
+
+  <script src="app.js"></script>
+
+
 </body>
+
 </html>
