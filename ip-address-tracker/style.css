@@ -70,12 +70,17 @@ body {
   border-bottom-right-radius: 10px;
   width: 40px;
   cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.form__input-btn:is(:hover, :active) {
+  background-color: var(--dark-gray);
 }
 
 .details-container {
   position: absolute;
   z-index: 999;
-  top: 200px;
+  top: 180px;
   left: 15vw;
   width: 70%;
   background-color: #fff;
@@ -148,17 +153,12 @@ h4 {
     width: 75vw;
   }
 
-  /* .form__input:hover {
-    z-index: 2000;
-  } */
-
   .form__input-btn {
     width: 50px;
   }
 
   .details-container {
     position: absolute;
-    top: 180px;
     left: 10vw;
     width: 80%;
     display: flex;
